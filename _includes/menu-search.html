@@ -1,0 +1,53 @@
+<div class="search-wrapper">
+    <div class="search-form">
+        <input type="text" class="search-field" placeholder="Search...">
+        <svg class="icon-remove-sign"><use xlink:href="#icon-close"></use></svg>
+        <ul class="search-results search-list"></ul>
+    </div>
+</div>
+
+<div id="fade" class="overlay"></div>
+<a id="slide" class="slideButton fade">
+    <svg id="open" class="icon-menu"><use xlink:href="#icon-menu"></use></svg>
+    <svg id="close" class="icon-menu"><use xlink:href="#icon-close"></use></svg>
+</a>
+<aside id="sidebar">
+  <div id="topmenu">
+  {% assign filename = page.url | replace_first: '/', '' | replace: '/', '-'  | replace: '.html', '.md' %}
+    <ul>
+      <li><span>1</span></li>
+      <li><span> {{page.url}}</span></li>
+      <li><span>⌘ blogspace  λ </span></li>
+      <li><span>* Menu</span></li>
+    </ul>
+    <ul>
+      <li><span>utf-8</span></li>
+      <li><span>web</span></li>
+      <li><span>.html</span></li>
+    </ul>
+  </div>
+  <nav id="navigation">
+    <!-- <h2>MENU</h2> -->
+    <ul>
+      {% assign counter=1 %}
+      {% for link in site.links %}
+      {% if link.external %}
+        <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+      {% else %}
+        <li><span class="counter-menu">{{counter}}</span><svg viewBox="0 0 50 50" class="icon-arrow-menu"><use xlink:href="#icon-right-arrow"></use></svg><a href="{{ site.url }}{{ link.url }}"> {{ link.title }}</a></li>
+      {% endif %}
+
+      {% assign counter=counter | plus:1 %}   
+      {% endfor %}
+    </ul>
+    <ul>
+      <li><span class="counter-menu">g</span><svg viewBox="0 0 50 50" class="icon-arrow-menu"><use xlink:href="#icon-right-arrow"></use></svg><a target="_blank" href="http://github.com/{{site.github_username}}" class="search">github</a></li>
+      <li><span class="counter-menu">p</span><svg viewBox="0 0 50 50" class="icon-arrow-menu"><use xlink:href="#icon-right-arrow"></use></svg><a href="/posts" class="">posts</a></li>
+      <li><span class="counter-menu">s</span><svg viewBox="0 0 50 50" class="icon-arrow-menu"><use xlink:href="#icon-right-arrow"></use></svg><a class="search">search</a></li>
+      <li><span class="counter-menu">t</span><svg viewBox="0 0 50 50" class="icon-arrow-menu"><use xlink:href="#icon-right-arrow"></use></svg><a target="_blank" href="http://twitter.com/{{site.twitter_username}}">twitter</a></li>
+    </ul>
+  </nav>
+</aside>
+<a id="search" class="dosearch">
+    <svg class="icon-menu icon-search"><use xlink:href="#icon-search"></use></svg>
+</a>

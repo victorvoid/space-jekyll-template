@@ -1,0 +1,157 @@
+*, *:before, *:after
+    -moz-box-sizing border-box
+    -webkit-box-sizing border-box
+    box-sizing border-box
+
+body
+  left 0
+  right 0
+  margin auto
+
+a, aside, .overlay, body
+    transition all .25s ease
+a.slideButton, .dosearch
+    position absolute
+    display block
+    width 40px
+    height 40px
+    top 10px
+    z-index 31
+.slideButton
+    left 10px
+.dosearch
+    right 10px
+    background darken(main,10%)
+    border-radius rem(3px)
+    padding rem(2px) rem(3px)
+.icon-menu
+    cursor pointer
+    padding rem(5px)
+    border-radius rem(3px)
+    background darken(main,10%)
+    width rem(40px)
+    height rem(40px)
+    fill sec
+.icon-search
+    width rem(35px)
+    height rem(35px)
+
+.overlay
+    cursor pointer
+
+#close
+    display none
+
+aside
+    position fixed
+    height 163px
+    width 100%
+    bottom -100%
+    background blackBase
+    z-index 20
+    box-shadow inset -10px -1px 15px -9px rgba(0,0,0,0.5)
+    li
+        margin 0
+        list-style-type none
+    ul
+        margin 0
+        padding 0
+    #topmenu
+        background-color main
+        border 2px solid main
+        cf()
+        ul
+            col(1.3/2)
+            +below(1000px)
+                col(2/2)
+            &:nth-child(2)
+                col(.7/2)
+                display none
+                text-align right
+                li
+                    &:first-child
+                        background transparent
+                        span
+                            background transparent
+                            border-radius 0
+                            color white
+                            width 45px
+                    &:nth-child(2)
+                        padding-left 20px
+                        padding-right 20px
+                    &:nth-child(3)
+                        margin-right -10px
+                        padding-left 10px
+                +above(1000px)
+                    display block                            
+            li
+                transform skewx(-20deg)
+                padding 3px 4px 6px 4px
+                background blackBase
+                display inline-block
+                // margin-left -5px
+                &:first-child
+                    background #EFB102
+                    padding 4px 10px 4px 20px
+                    margin-left -10px
+                    span
+                        border-radius 100%
+                        size(20, 20)
+                        text-align center
+                        background-color black
+                        color #EFB102
+                        font-weight 300
+                &:nth-child(3)
+                    background mainLight
+                    padding-right 30px
+                    padding-left 30px
+                    span
+                        color white
+                span
+                    transform skewx(20deg)
+                    display block
+                    mainFont(800)
+                    font-size rem(13px)
+                    color mainLight
+                &:nth-child(3), 
+                &:nth-child(4)
+                    +below(cut)
+                        display none
+    nav
+        ul
+            padding 10px 0 0 10px
+            float left
+            margin-right 80px
+            // clear both
+            .counter-menu
+                color mainLight
+                font-weight 800
+                margin-right 4px
+            a
+                width 100%
+                cursor pointer
+                text-decoration none
+                mainFont(300)
+                color #b3b3b1
+                &:hover
+                    background mainHover
+    &.slide
+        bottom 0
+
+
+a.slideButton.slide
+    pointer-events none
+
+.overlay
+    position fixed
+    width 100%
+    height 100%
+    bottom 0
+    left 0
+    pointer-events none
+    background transparent
+    z-index 30
+    &.slide
+        pointer-events auto
+        bottom 162px
+        background rgba(0,0,0,.6)

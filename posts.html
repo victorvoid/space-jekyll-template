@@ -1,0 +1,28 @@
+---
+layout: minimal
+title: "Meus Posts"
+permalink: /posts/index.html
+image: '/assets/img/posts.png'
+description: "Take a look at my posts..."
+---
+{% for post in site.posts %}
+        <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+            <div class="content">
+                <a href="{{ post.url | prepend: site.baseurl }}"><h2 class="post-title" itemprop="name">{{ post.title }}</h2></a>
+                <meta itemprop="datePublished" content="{{post.date}}">
+                <time datetime="{{ post.date | date_to_xmlschema }}">
+                    <span class="day">
+                        {{ post.date | date: "%d" }}
+                    </span>
+                    <span class="month-year">
+                        {{ post.date | date: "%B %Y" }}
+                    </span>
+                </time>
+               <!--  <div class="tags">
+                    {% for tag in post.tags %}
+                        <a href="{{ site.baseurl }}/tags/#{{tag | slugify }}">{{ tag }}</a>
+                    {% endfor %}
+                </div> -->
+            </div>
+        </article>
+{% endfor %}
