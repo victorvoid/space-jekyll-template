@@ -14,13 +14,13 @@
             <a aria-label="Use the RSS to get updated" target="_blank" href="{{ "/feed.xml" | prepend: site.baseurl }}"><svg class="icon icon-rss"><use xlink:href="#icon-rss"></use></svg></a>
         </div>
         <ul class="recent">
-            <p>Posts recentes:</p>
+            <p>Recent posts:</p>
              {% for post in site.posts limit:3%}
                 <li><a href="{{ post.url | prepend: site.baseurl }}"><h2 class="post-title" itemprop="name">{{ post.title }}</h2></a></li>
               {% endfor %}
         </ul>
         <ul class="recent">
-            <p>Projetos recentes:</p>
+            <p>Recent projects:</p>
              {% for project in site.projects limit:3%}
                 <li><a href="{{ project.url}}"><h2 class="post-title" itemprop="name">{{ project.name }}</h2></a></li>
               {% endfor %}
