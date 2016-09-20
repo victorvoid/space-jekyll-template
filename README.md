@@ -52,7 +52,7 @@ twitter_text: 'How to speak with Lorem'
 ## License
 The MIT License (MIT)
 
-Copyright (c) 2015 Victor Igor
+Copyright (c) 2016 Victor Igor
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
