@@ -53,12 +53,15 @@
         case "Digit5":
           $("#sidebar ul li:nth-child(5) a").trigger('click');
           break;
-        case "KeyP":
+        case "KeyG":
           $("#sidebar ul:nth-child(2) li:first-child a").trigger('click');
           break;
         case "KeyS":
           $('#fade').trigger('click');
           $("#search").trigger('click');
+          break;
+         case "KeyT":
+          $("#sidebar ul:nth-child(2) li:nth-child(3) a").trigger('click');
           break;
       }
     }

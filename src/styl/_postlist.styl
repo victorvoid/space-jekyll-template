@@ -1,0 +1,62 @@
+.page_posts
+    .tree-posts
+        display block
+        width 100%
+    #search
+       background transparent
+       svg
+           background-color transparent
+.tree-posts
+    padding-top: 43px
+    width 347px
+    height 100%
+    position fixed
+    background-color neotree
+    overflow-y auto
+    top 0
+    +below(rem(1450px))
+        display none
+ 
+    h3
+        color #c06a64
+        position relative
+        margin rem(10px) 0
+        &:before
+            content ""
+            width 100px
+            height 4px
+            position absolute
+            bottom 0
+            background-color #c06a64
+.post-item
+    text-align left
+    padding rem(5px) rem(20px)
+    position relative
+    .content
+        cf();
+        +below(cut)
+            text-align center
+            stack()
+        a
+            text-transform lowercase
+            +above(cut)
+                col(4.2/6)
+            text-decoration none
+            border none
+        .date
+            color main
+        .post-title
+            color #c7b288
+            position relative
+            padding 0
+            font-size rem(16px)
+            margin 0
+            text-align center
+            &:hover
+                background-color rgba(199, 178, 136, 0.32)
+            +above(cut)
+                text-align left
+                margin-left rem(-10px)
+                display initial
+                font-size rem(17px)
+                text-decoration none

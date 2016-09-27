@@ -1,8 +1,8 @@
 # Site settings
 title: Lorem Ipsum - Web Developer
 description: "A blog about lorem ipsum ..."
-baseurl: "/space-jekyll-template" # the subpath of your site, e.g. /blog
-url: "http://victorvoid.github.io"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: ""
 
 # User settings
 username: lorem ipsum
@@ -37,7 +37,7 @@ links:
     url: /series
   - title: tags
     url: /tags
-  - title: About me
+  - title: about me
     url: /about
 # projects in header index
 projects:
