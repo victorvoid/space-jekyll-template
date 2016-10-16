@@ -1,17 +1,17 @@
 # Site settings
-title: Lorem Ipsum - Web Developer
-description: "A blog about lorem ipsum ..."
-baseurl: "/space-jekyll-template" # the subpath of your site
-url: "http://victorvoid.github.io"
+title: 陈凸立简介 Intro of Tobi
+description: "A blog about Tobi Chen ..."
+baseurl: /sagitony
+url: "http://sagitonysimple.github.io"
 
 # User settings
-username: lorem ipsum
-user_title: Lorem Ipsum - FrontEnd
-email: lorem.lorem@ipsum.com
-twitter_username: loremipsum
-github_username:  loremipsum
-gplus_username:  loremipsum
-disqus_username: loremipsum
+username: sagitony
+user_title: 陈凸立简介
+email: sagitony@qq.com
+twitter_username: sagitony
+github_username:  sagitony
+gplus_username:  sagitonychen
+disqus_username: sagitony
 
 # Build settings
 markdown: kramdown
