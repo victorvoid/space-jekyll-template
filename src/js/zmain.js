@@ -23,51 +23,51 @@
   };
   //Keys
   $(document).keydown(function(e){
-    console.log(e.code);
+    console.log(e.key);
     if(! $('.search-form').hasClass('active')){
-      switch(e.code) {
-        case "Space":
+      switch(e.key) {
+        case " ":
           $('a#slide').trigger('click');
           $('')
           break;
-        case "Escape":
+        case "Esc":
           $('#fade').trigger('click');
           break;
       }
     }
     //sidebar active
     if($('#sidebar').hasClass('slide')){
-      switch(e.code) {
-        case "Digit1":
-          $("#sidebar ul li:first-child a").trigger('click');
+      switch(e.key) {
+        case "1":
+          $("#sidebar ul:first-child li:first-child a").trigger('click');
           break;
-        case "Digit2":
-          $("#sidebar ul li:nth-child(2) a").trigger('click');
+        case "2":
+          $("#sidebar ul:first-child li:nth-child(2) a").trigger('click');
           break;
-        case "Digit3":
-          $("#sidebar ul li:nth-child(3) a").trigger('click');
+        case "3":
+          $("#sidebar ul:first-child li:nth-child(3) a").trigger('click');
           break;
-        case "Digit4":
-          $("#sidebar ul li:nth-child(4) a").trigger('click');
+        case "4":
+          $("#sidebar ul:first-child li:nth-child(4) a").trigger('click');
           break;
-        case "Digit5":
-          $("#sidebar ul li:nth-child(5) a").trigger('click');
+        case "5":
+          $("#sidebar ul:first-child li:nth-child(5) a").trigger('click');
           break;
-        case "KeyG":
+        case "g":
           $("#sidebar ul:nth-child(2) li:first-child a").trigger('click');
           break;
-        case "KeyS":
+        case "s":
           $('#fade').trigger('click');
           $("#search").trigger('click');
           break;
-         case "KeyT":
+         case "t":
           $("#sidebar ul:nth-child(2) li:nth-child(3) a").trigger('click');
           break;
       }
     }
     if($('.search-form').hasClass('active')){
-      switch(e.code) {
-        case "Escape":
+      switch(e.key) {
+        case "Esc":
           $('.icon-remove-sign').trigger('click');
           break;
       }
