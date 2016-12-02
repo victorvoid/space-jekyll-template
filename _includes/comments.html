@@ -1,12 +1,15 @@
 <section class="comments">
+
     <h3>Comments</h3>
     <div id="disqus_thread"></div>
+
 </section>
+
 <script type="text/javascript">
+
     var disqus_loaded = false;
 
-    function load_disqus()
-    {
+    function load_disqus(){
         disqus_loaded = true;
         var disqus_shortname = '{{site.disqus_username}}';
         var disqus_title = '{{page.title.replace("'", "\\'")}}';
@@ -16,6 +19,7 @@
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         var ldr = document.getElementById('disqus_loader');
     };
+
     window.onscroll = function(e) {
         if ((window.innerHeight + window.scrollY) >= (document.body.offsetHeight - 800)) {
             //hit bottom of page

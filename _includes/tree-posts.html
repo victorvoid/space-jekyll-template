@@ -1,6 +1,9 @@
 <div class="tree-posts">
+
     <h3>*Posts*</h3>
+
     {% for post in site.posts %}
+    
     <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
         <div class="content">
             <a href="{{ post.url | prepend: site.baseurl }}">
@@ -8,5 +11,7 @@
             </a>
         </div>
     </article>
+
     {% endfor %}
+
 </div>

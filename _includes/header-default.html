@@ -1,30 +1,60 @@
 <header class="header-site" role="banner">
     <div class="content">
+
         <div class="person">
             <img src="https://s-media-cache-ak0.pinimg.com/564x/9d/4d/31/9d4d314ec7722d05541111a180e4e54b.jpg" alt="">
         </div>
+
         <h1>
             <span class="site-title">[{{site.username}}]</span>
         </h1>
+
         <div class="icons-home">
-            <a aria-label="Send email" href="mailto:{{site.email}}"><svg class="icon icon-email"><use xlink:href="#icon-email"></use></svg></a>
-            <a aria-label="My Twitter" target="_blank" href="https://twitter.com/{{site.twitter_username}}"><svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg></a>
-            <a aria-label="My Google Plus" target="_blank" href="https://plus.google.com/{{site.gplus_username}}/posts"><svg class="icon icon-google-plus"><use xlink:href="#icon-google-plus"></use></svg></a>
-            <a aria-label="My Github" target="_blank" href="https://github.com/{{site.github_username}}"><svg class="icon icon-github-alt"><use xlink:href="#icon-github-alt"></use></svg></a>
-            <a aria-label="Use the RSS to get updated" target="_blank" href="{{ "/feed.xml" | prepend: site.baseurl }}"><svg class="icon icon-rss"><use xlink:href="#icon-rss"></use></svg></a>
+
+            <a aria-label="Send email" href="mailto:{{site.email}}">
+                <svg class="icon icon-email"><use xlink:href="#icon-email"></use></svg>
+            </a>
+
+            <a aria-label="My Twitter" target="_blank" href="https://twitter.com/{{site.twitter_username}}">
+                <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
+            </a>
+
+            <a aria-label="My Google Plus" target="_blank" href="https://plus.google.com/{{site.gplus_username}}/posts">
+                <svg class="icon icon-google-plus"><use xlink:href="#icon-google-plus"></use></svg>
+            </a>
+
+            <a aria-label="My Github" target="_blank" href="https://github.com/{{site.github_username}}">
+                <svg class="icon icon-github-alt"><use xlink:href="#icon-github-alt"></use></svg>
+            </a>
+
+            <a aria-label="Use the RSS to get updated" target="_blank" href="{{ "/feed.xml" | prepend: site.baseurl }}">
+                <svg class="icon icon-rss"><use xlink:href="#icon-rss"></use></svg>
+            </a>
+
         </div>
+
         <ul class="recent">
             <p>Recent posts:</p>
              {% for post in site.posts limit:3%}
-                <li><a href="{{ post.url | prepend: site.baseurl }}"><h2 class="post-title" itemprop="name">{{ post.title }}</h2></a></li>
+                <li>
+                    <a href="{{ post.url | prepend: site.baseurl }}">
+                        <h2 class="post-title" itemprop="name">{{ post.title }}</h2>
+                    </a>
+                </li>
               {% endfor %}
         </ul>
+
         <ul class="recent">
             <p>Recent projects:</p>
              {% for project in site.projects limit:3%}
-                <li><a href="{{ project.url}}"><h2 class="post-title" itemprop="name">{{ project.name }}</h2></a></li>
+                <li>
+                    <a href="{{ project.url}}">
+                        <h2 class="post-title" itemprop="name">{{ project.name }}</h2>
+                    </a>
+                </li>
               {% endfor %}
         </ul>
+
     </div>
     {% include menu-search.html %}
 </header>
