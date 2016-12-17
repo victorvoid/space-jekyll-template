@@ -23,14 +23,13 @@
   };
   //Keys
   $(document).keydown(function(e){
-    console.log(e.key);
+    // console.log(e.key);
     if(! $('.search-form').hasClass('active')){
       switch(e.key) {
         case " ":
           $('a#slide').trigger('click');
-          $('')
           break;
-        case "Esc":
+        case "Escape":
           $('#fade').trigger('click');
           break;
       }
