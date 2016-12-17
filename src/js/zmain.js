@@ -71,7 +71,7 @@
           break;
       }
     }
-  })
+  });
   // Search
   var bs = {
     close: $(".icon-remove-sign"),
