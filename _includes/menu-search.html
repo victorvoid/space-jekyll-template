@@ -1,8 +1,9 @@
 <div class="search-wrapper">
 
     <div class="search-form">
-        <input type="text" class="search-field" placeholder="Search...">
+        <input arial-label="Search for a post" type="text" class="search-field" placeholder="Search...">
         <svg class="icon-remove-sign"><use xlink:href="#icon-close"></use></svg>
+
         <ul class="search-results search-list"></ul>
     </div>
 
@@ -32,7 +33,7 @@
     </ul>
   </div>
 
-  <nav id="navigation">
+  <nav id="navigation" role="navigation">
     <ul>
       {% assign counter=1 %}
       {% for link in site.links %}
@@ -53,13 +54,11 @@
     </ul>
 
     <ul>
-      <li><span class="counter-menu">g</span><svg viewBox="0 0 50 50" class="icon-arrow-menu"><use xlink:href="#icon-right-arrow"></use></svg><a target="_blank" href="http://github.com/{{site.github_username}}" class="search">github</a></li>
-      <li><span class="counter-menu">s</span><svg viewBox="0 0 50 50" class="icon-arrow-menu"><use xlink:href="#icon-right-arrow"></use></svg><a class="search">search</a></li>
-      <li><span class="counter-menu">t</span><svg viewBox="0 0 50 50" class="icon-arrow-menu"><use xlink:href="#icon-right-arrow"></use></svg><a target="_blank" href="http://twitter.com/{{site.twitter_username}}">twitter</a></li>
+      <li><span class="counter-menu">g</span><svg viewBox="0 0 50 50" class="icon-arrow-menu"><use xlink:href="#icon-right-arrow"></use></svg><a title="Show my projects on GitHub"  target="_blank" href="http://github.com/{{site.github_username}}" class="search">github</a></li>
+      <li><span class="counter-menu">s</span><svg viewBox="0 0 50 50" class="icon-arrow-menu"><use xlink:href="#icon-right-arrow"></use></svg><a  title="Search for a post" class="search">search</a></li>
+      <li><span class="counter-menu">t</span><svg viewBox="0 0 50 50" class="icon-arrow-menu"><use xlink:href="#icon-right-arrow"></use></svg><a title="Follow me in Twitter" target="_blank" href="http://twitter.com/{{site.twitter_username}}">twitter</a></li>
     </ul>
-
   </nav>
-
 </aside>
 
 <a id="search" class="dosearch">
