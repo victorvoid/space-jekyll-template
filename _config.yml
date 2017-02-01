@@ -1,12 +1,12 @@
 # Site settings
-title: Lorem Ipsum - Web Developer
-description: "A blog about lorem ipsum ..."
+title: LabBook
+description: "Lab Book for CS560 Human Computer Interaction"
 baseurl: "/space-jekyll-template" # for test: remove string '/space-jekyll-templa' to ''
-url: "http://victorvoid.github.io" # for test: remove string 'http://victorvoid.github.io' to '' but in production: 'https://yourusername.githu.io'
+url: "http://mcpate.github.io" # for test: remove string 'http://victorvoid.github.io' to '' but in production: 'https://yourusername.githu.io'
 # User settings
-username: lorem ipsum
-user_title: Lorem Ipsum - FrontEnd
-email: lorem.lorem@ipsum.com
+username: mcpate
+user_title: Matt Pate
+email: lorem@ipsum.com
 twitter_username: loremipsum
 github_username:  loremipsum
 gplus_username:  loremipsum
@@ -29,21 +29,21 @@ compress_html:
 links:
   - title: home
     url: /
-  - title: my posts
+  - title: projects
     url: /posts
-  - title: series
-    url: /series
+ # - title: series
+ #   url: /series
   - title: tags
     url: /tags
   - title: about me
     url: /about
 # projects in header index
-projects:
-  - name: asciilang
-    url: https://github.com/victorvoid/asciilang
-  - name: vim-frontend
-    url: https://github.com/victorvoid/vim-frontend
-  - name: generator-capybara
-    url: https://github.com/victorvoid/generator-capybara 
+#projects:
+#  - name: asciilang
+#    url: https://github.com/victorvoid/asciilang
+#  - name: vim-frontend
+#    url: https://github.com/victorvoid/vim-frontend
+#  - name: generator-capybara
+#    url: https://github.com/victorvoid/generator-capybara 
 # exclude my node related stuff
 exclude: ['package.json', 'src', 'node_modules']
