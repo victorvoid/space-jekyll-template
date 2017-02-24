@@ -26,3 +26,18 @@
     h2
         &:hover
             background-color mainHover
+    li
+      h3
+        font-size rem(20px)
+        margin-bottom 7px
+        position relative
+        &:before
+          content "|>"
+          font-size rem(20px)
+          color black
+          position absolute
+          left -10px
+          transition all .2s
+        &:hover
+          &:before
+            transform translateX(-10px)
