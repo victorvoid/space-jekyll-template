@@ -64,9 +64,10 @@
           break;
       }
     }
+    //use esc key to close search panel: typo fixed
     if($('.search-form').hasClass('active')){
       switch(e.key) {
-        case "Esc":
+        case "Escape":
           $('.icon-remove-sign').trigger('click');
           break;
       }
