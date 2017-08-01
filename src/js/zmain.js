@@ -21,6 +21,13 @@
         return false;
     }
   };
+  
+  // Search panel mouse click event suppport
+  $('#searching').click(function(){
+    $('#fade').trigger('click');
+    $("#search").trigger('click');
+  })
+  
   //Keys
   $(document).keydown(function(e){
     // console.log(e.key);
