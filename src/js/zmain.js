@@ -80,6 +80,17 @@
       }
     }
   });
+  
+  //Key release
+  //Fix : extra character 's' is entered to the input field when switching to the search form by using keypress
+  $(document).keyup(function(e){
+    if($('.search-form').hasClass('active')){
+      $(".search-form").find('input').focus();
+    }else{
+      $(".search-form").find('input').blur();
+    }
+  });
+  
   // Search
   var bs = {
     close: $(".icon-remove-sign"),
@@ -91,7 +102,8 @@
   bs.dothis.on('click', function() {
     $('.search-wrapper').toggleClass('active');
     bs.searchform.toggleClass('active');
-    bs.searchform.find('input').focus();
+    // Only focus the form after key release, prvent the character 's' entered immediately after key enter
+    //bs.searchform.find('input').focus();     
     bs.canvas.toggleClass('search-overlay');
     $('.search-field').simpleJekyllSearch();
   });
