@@ -1,4 +1,5 @@
 ---
+layout: empty
 ---
 [
   {% for post in site.posts %}
