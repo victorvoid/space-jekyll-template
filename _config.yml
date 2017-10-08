@@ -10,6 +10,7 @@ email: lorem.lorem@ipsum.com
 twitter_username: loremipsum
 github_username:  loremipsum
 gplus_username:  loremipsum
+linkedin_public_url: loremipsum # Example: For public profile 'www.linkedin.com/in/john-smith', 'john-smith' is your linkedin_public_url
 disqus_username: loremipsum
 profile_picture: https://68.media.tumblr.com/93f384858e9273d5b980b418e2f2f4d5/tumblr_o5i2aybLJG1uapsfmo2_250.png
 
