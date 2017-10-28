@@ -53,6 +53,7 @@ twitter_text: 'How to speak with Lorem'
 
 Frontend Technologies
 ---------------------
+* [Gulp](https://gulpjs.com/): The streaming build system.
 * [Stylus](http://stylus-lang.com/): expressive, dynamic, robust CSS.
 * [BrowserSync](https://www.browsersync.io/): Time-saving synchronised browser testing.
 * [Rupture](https://github.com/jescalan/rupture): Simple media queries for stylus.
