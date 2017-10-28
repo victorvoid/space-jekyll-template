@@ -70,6 +70,8 @@ First, install [jekyll](https://jekyllrb.com/) and [node.js](https://nodejs.org/
 4. run `gulp`
 5. Be happy by modifying the files
 
+**Space Jekyll** uses the [Stylus](http://stylus-lang.com/) to process his css, then modifies the style of the theme in [this folder](https://github.com/victorvoid/space-jekyll-template/tree/master/src/styl).
+
 You can go in the [variable.styl](https://github.com/victorvoid/space-jekyll-template/blob/master/src/styl/_variables.styl) and modify the colors. 
 
 
