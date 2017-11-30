@@ -6,14 +6,13 @@ url: "" # for test: remove string 'http://victorvoid.github.io' to '' but in pro
 # User settings
 username: Anicca Chan 
 user_title: Anicca Chan  - FrontEnd
-email: lorem.lorem@ipsum.com
+email: k1997102454@gmail.com
 twitter_username: 
 github_username:  AniccaChan
 gplus_username:  
 linkedin_public_url:  # Example: For public profile 'www.linkedin.com/in/john-smith', 'john-smith' is your linkedin_public_url
 disqus_username: loremipsum
-profile_picture: https://drive.google.com/file/d/0B8BC-cG3JKVCdzBndG9MTGhxUFk/view?usp=sharing
-
+profile_picture: https://i.imgur.com/JipK98t.jpg
 # Build settings
 markdown: kramdown
 highlighter: rouge
