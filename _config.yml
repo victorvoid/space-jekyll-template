@@ -1,18 +1,18 @@
 # Site settings
-title: Lorem Ipsum - Web Developer
-description: "A blog about lorem ipsum ..."
+title: Anicca Chan  - Information Engineering student
+description: " ..."
 baseurl: "" # for test: remove string '/space-jekyll-template' to ''
 url: "" # for test: remove string 'http://victorvoid.github.io' to '' but in production: 'https://yourusername.githu.io'
 # User settings
-username: lorem ipsum
-user_title: Lorem Ipsum - FrontEnd
+username: Anicca Chan 
+user_title: Anicca Chan  - FrontEnd
 email: lorem.lorem@ipsum.com
-twitter_username: loremipsum
-github_username:  loremipsum
-gplus_username:  loremipsum
-linkedin_public_url: loremipsum # Example: For public profile 'www.linkedin.com/in/john-smith', 'john-smith' is your linkedin_public_url
+twitter_username: 
+github_username:  AniccaChan
+gplus_username:  
+linkedin_public_url:  # Example: For public profile 'www.linkedin.com/in/john-smith', 'john-smith' is your linkedin_public_url
 disqus_username: loremipsum
-profile_picture: https://68.media.tumblr.com/93f384858e9273d5b980b418e2f2f4d5/tumblr_o5i2aybLJG1uapsfmo2_250.png
+profile_picture: https://drive.google.com/file/d/0B8BC-cG3JKVCdzBndG9MTGhxUFk/view?usp=sharing
 
 # Build settings
 markdown: kramdown
@@ -41,11 +41,11 @@ links:
     url: /about
 # projects in header index
 projects:
-  - name: asciilang
-    url: https://github.com/victorvoid/asciilang
-  - name: vim-frontend
-    url: https://github.com/victorvoid/vim-frontend
-  - name: generator-capybara
-    url: https://github.com/victorvoid/generator-capybara 
+  - name: 
+    url: 
+  - name: 
+    url: 
+  - name: 
+    url: 
 # exclude my node related stuff
 exclude: ['package.json', 'src', 'node_modules']
