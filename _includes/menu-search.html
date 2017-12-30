@@ -18,7 +18,10 @@
 
 <aside id="sidebar">
   <div id="topmenu">
-    {% assign filename = page.url | replace_first: '/', '' | replace: '/', '-'  | replace: '.html', '.md' %}
+    {% assign filename = page.url
+                         | replace_first: '/', ''
+                         | replace: '/', '-'
+                         | replace: '.html', '.md' %}
     <ul>
       <li><span>1</span></li>
       <li><span> {{page.url}}</span></li>
@@ -34,30 +37,26 @@
   </div>
 
   <nav id="navigation" role="navigation">
-    <ul>
-      {% assign counter=1 %}
-      {% for link in site.links %}
-      {% if link.external %}
-        <li>
-          <a href="{{ link.url }}">{{ link.title }}</a>
-        </li>
-      {% else %}
-        <li>
-          <span class="counter-menu">{{counter}}</span>
-          <svg viewBox="0 0 50 50" class="icon-arrow-menu"><use xlink:href="#icon-right-arrow"></use></svg>
-          <a href="{{ site.url }}{{ link.url }}"> {{ link.title }}</a>
-        </li>
-      {% endif %}
-
-      {% assign counter=counter | plus:1 %}   
+    {% for section in site.links %}
+      <ul>
+      {% for link in section[1] %}
+        {% if link.external %}
+            <li>
+                <a href="{{ link.url }}">{{ link.title }}</a>
+            </li>
+        {% else %}
+            <li>
+                <span class="counter-menu">{{link.key_trigger}}</span>
+                <svg viewBox="0 0 50 50" class="icon-arrow-menu">
+                    <use xlink:href="#icon-right-arrow"></use>
+                </svg>
+                <a key-trigger={{ link.key_trigger }}
+                    href="{{ site.url }}{{ link.url }}"> {{ link.title }}</a>
+            </li>
+        {% endif %}
       {% endfor %}
-    </ul>
-
-    <ul>
-      <li><span class="counter-menu">g</span><svg viewBox="0 0 50 50" class="icon-arrow-menu"><use xlink:href="#icon-right-arrow"></use></svg><a title="Show my projects on GitHub"  target="_blank" href="http://github.com/{{site.github_username}}" class="search">github</a></li>
-      <li><span class="counter-menu">s</span><svg viewBox="0 0 50 50" class="icon-arrow-menu"><use xlink:href="#icon-right-arrow"></use></svg><a id="searching" title="Search for a post" class="search">search</a></li>
-      <li><span class="counter-menu">t</span><svg viewBox="0 0 50 50" class="icon-arrow-menu"><use xlink:href="#icon-right-arrow"></use></svg><a title="Follow me in Twitter" target="_blank" href="http://twitter.com/{{site.twitter_username}}">twitter</a></li>
-    </ul>
+      </ul>
+    {% endfor %}
   </nav>
 </aside>
 

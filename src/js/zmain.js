@@ -21,17 +21,16 @@
         return false;
     }
   };
-  
-  // Search panel mouse click event suppport
+
+  // Search panel mouse click event support
   $('#searching').click(function(){
     $('#fade').trigger('click');
     $("#search").trigger('click');
   })
-  
+
   //Keys
   $(document).keydown(function(e){
-    // console.log(e.key);
-    if(! $('.search-form').hasClass('active')){
+    if(!$('.search-form').hasClass('active')){
       switch(e.key) {
         case " ":
           $('a#slide').trigger('click');
@@ -41,48 +40,24 @@
           break;
       }
     }
-    //sidebar active
+
     if($('#sidebar').hasClass('slide')){
-      switch(e.key) {
-        case "1":
-          $("#sidebar ul:first-child li:first-child a").trigger('click');
-          break;
-        case "2":
-          $("#sidebar ul:first-child li:nth-child(2) a").trigger('click');
-          break;
-        case "3":
-          $("#sidebar ul:first-child li:nth-child(3) a").trigger('click');
-          break;
-        case "4":
-          $("#sidebar ul:first-child li:nth-child(4) a").trigger('click');
-          break;
-        case "5":
-          $("#sidebar ul:first-child li:nth-child(5) a").trigger('click');
-          break;
-        case "g":
-          $("#sidebar ul:nth-child(2) li:first-child a").trigger('click');
-          break;
-        case "s":
-          $('#fade').trigger('click');
-          $("#search").trigger('click');
-          break;
-         case "t":
-          $("#sidebar ul:nth-child(2) li:nth-child(3) a").trigger('click');
-          break;
+      if(e.key === "s"){
+        $('#fade').trigger('click');
+        $("#search").trigger('click');
+      } else {
+        $("#sidebar ul").find("[key-trigger='" + e.key + "']").trigger('click');
       }
     }
-    //use esc key to close search panel: typo fixed
-    if($('.search-form').hasClass('active')){
-      switch(e.key) {
-        case "Escape":
-          $('.icon-remove-sign').trigger('click');
-          break;
-      }
+
+    if($('.search-form').hasClass('active') && e.key === "Escape"){
+      $('.icon-remove-sign').trigger('click');
     }
   });
-  
+
   //Key release
-  //Fix : extra character 's' is entered to the input field when switching to the search form by using keypress
+  //Fix : extra character 's' is entered to the input field when s
+  //      witching to the search form by using keypress
   $(document).keyup(function(e){
     if($('.search-form').hasClass('active')){
       $(".search-form").find('input').focus();
@@ -90,7 +65,7 @@
       $(".search-form").find('input').blur();
     }
   });
-  
+
   // Search
   var bs = {
     close: $(".icon-remove-sign"),
@@ -102,8 +77,9 @@
   bs.dothis.on('click', function() {
     $('.search-wrapper').toggleClass('active');
     bs.searchform.toggleClass('active');
-    // Only focus the form after key release, prvent the character 's' entered immediately after key enter
-    //bs.searchform.find('input').focus();     
+    // Only focus the form after key release, prvent the character 's'
+    // entered immediately after key enter
+    // bs.searchform.find('input').focus();
     bs.canvas.toggleClass('search-overlay');
     $('.search-field').simpleJekyllSearch();
   });
