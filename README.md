@@ -53,6 +53,8 @@ twitter_text: 'How to speak with Lorem'
 
 ## How to insert new links on menu navigation ?
 
+![](https://github.com/victorvoid/space-jekyll-template/blob/master/src/img/menu.png)
+
 You should open `_config.yml` and change/add `links` section:
 
 ```yaml
