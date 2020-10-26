@@ -51,6 +51,32 @@ twitter_text: 'How to speak with Lorem'
 ---
 ```
 
+## How to insert new links on menu navigation ?
+
+![](https://github.com/victorvoid/space-jekyll-template/blob/master/src/img/menu.png)
+
+You should open `_config.yml` and change/add `links` section:
+
+```yaml
+links:
+  section_1: # you can use any name
+    - title: home # show on menu
+      url: / #link
+      key_trigger: 1 # link shortcut and show on the left of the title
+    - title: my posts
+      url: /posts
+      key_trigger: 2
+    - title: series
+      url: /series
+      key_trigger: 3
+    - title: tags
+      url: /tags
+      key_trigger: 4
+    - title: about me
+      url: /about
+      key_trigger: 5
+```
+
 Frontend Technologies
 ---------------------
 * [Gulp](https://gulpjs.com/): The streaming build system.
