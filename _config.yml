@@ -10,7 +10,7 @@ user_title: Mengyantong - FrontEnd
 email: 41724201@xs.ustb.edu.cn
 twitter_username: Miant
 github_username:  Miant
-gplus_username:  loremipsum
+gplus_username:  Miant
 linkedin_public_url: Mengyantong
 disqus_username: Mengyantong
 profile_picture: https://68.media.tumblr.com/93f384858e9273d5b980b418e2f2f4d5/tumblr_o5i2aybLJG1uapsfmo2_250.png
@@ -50,9 +50,6 @@ links:
       url: http://www.github.com/mengyantong
       new_tab: true
       key_trigger: g
-    - title: twitter
-      url: http://www.twitter.com/miant
-      key_trigger: t
     - title: search
       url: ""
       key_trigger: s #WARNING: search only works with "s"
