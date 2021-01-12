@@ -52,10 +52,10 @@ links:
 
 # projects in header index
 projects:
-  - name: fluany
-    url: https://github.com/fluany/fluany
-  - name: vim-frontend
-    url: https://github.com/victorvoid/vim-frontend
+  - name: BabyCodeEditor
+    url: https://github.com/Mengyantong/BabyCodeEditor
+  - name: BabyFtpClient
+    url: https://github.com/Mengyantong/BabyFtpClient
 
 # exclude my node related stuff
 exclude: ['package.json', 'src', 'node_modules']
