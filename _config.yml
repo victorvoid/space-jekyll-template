@@ -10,8 +10,7 @@ user_title: 面面 - FrontEnd
 email: 41724201@xs.ustb.edu.cn
 github_username:  Miant
 linkedin_public_url: Mengyantong
-profile_picture: https://wx3.sinaimg.cn/mw690/00783xtvly1gmkygjx5stj30kn0knmy5.jpg
-
+profile_picture: https://avatars2.githubusercontent.com/u/31527889?s=400&u=15e41190c479a6f463edff5969355e2a664ac6c0&v=4
 # Build settings
 markdown: kramdown
 highlighter: rouge
@@ -57,8 +56,6 @@ projects:
     url: https://github.com/fluany/fluany
   - name: vim-frontend
     url: https://github.com/victorvoid/vim-frontend
-  - name: generator-capybara
-    url: https://github.com/victorvoid/generator-capybara 
 
 # exclude my node related stuff
 exclude: ['package.json', 'src', 'node_modules']
