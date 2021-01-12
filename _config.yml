@@ -5,7 +5,7 @@ baseurl:
 url: "http://mengyantong.github.io" 
 
 # User settings
-username: Mengyantong
+username: 面面
 user_title: Mengyantong - FrontEnd
 email: 41724201@xs.ustb.edu.cn
 github_username:  Miant
@@ -44,7 +44,7 @@ links:
       key_trigger: 5
   section_2:
     - title: github
-      url: http://www.github.com/mengyantong
+      url: 
       new_tab: true
       key_trigger: g
     - title: search
