@@ -10,7 +10,9 @@ categories:
 - daily record
 ---
 # Smart pointer
+
 > shared_ptr, unique_ptr, weak_ptr
+
 ## make_uinque 取代 new
 ~~~cpp
 auto upw1(std::make_unique<Widget>());     // 使用make函数
