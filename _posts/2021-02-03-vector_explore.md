@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "vector探索"
+title:  "vector explore"
 image: ''
 date:   2021-02-03 00:15:31
 tags:

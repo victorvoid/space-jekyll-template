@@ -9,5 +9,7 @@ description: ''
 categories:
 - daily record
 ---
-
 [Google C++ Style](https://google.github.io/styleguide/cppguide.html#Conditionals)
+
+
+[Google Python Style](https://zh-google-styleguide.readthedocs.io/en/latest/google-python-styleguide/python_language_rules/#lexical-scoping)
