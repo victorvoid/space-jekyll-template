@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "code_styles"
+title:  "code styles"
 image: ''
 date:   2021-05-14 14:44:28
 tags:
