@@ -32,7 +32,6 @@ clock_t timeStart = clock();
 	
 ~~~
 
-![image-20210201235625838](/home/miant/.config/Typora/typora-user-images/image-20210201235625838.png)
 
 
 
