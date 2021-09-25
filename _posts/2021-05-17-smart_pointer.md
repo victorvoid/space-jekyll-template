@@ -9,7 +9,7 @@ description: ''
 categories:
 - daily record
 ---
-# Smart pointer
+
 
 > shared_ptr, unique_ptr, weak_ptr
 
