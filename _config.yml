@@ -1,18 +1,18 @@
 # Site settings
-title: Lorem Ipsum - Web Developer
-description: "A blog about lorem ipsum ..."
+title: "amamiYukikaze's Personal HomePage"
+description: "Still under test."
 baseurl: "/space-jekyll-template" # for test: remove string '/space-jekyll-template' to ''
 url: "http://victorvoid.github.io/space-jekyll-template/" # for test: remove string 'http://victorvoid.github.io' to '' but in production: 'https://yourusername.github.io'
 
 # User settings
-username: lorem ipsum
-user_title: Lorem Ipsum - FrontEnd
-email: lorem.lorem@ipsum.com
-twitter_username: loremipsum
-github_username:  loremipsum
-discord_invite: cj5rg # Example: Discord server invite gg extension like in 'https://discord.gg/cj5rg'
-linkedin_public_url: loremipsum # Example: For public profile 'www.linkedin.com/in/john-smith', 'john-smith' is your linkedin_public_url
-disqus_username: loremipsum
+username: amamiYukikaze
+user_title: aykkz PHP
+email: amamiykkz@gmail.com
+twitter_username: 
+github_username:  amamiYukikaze
+discord_invite:  # Example: Discord server invite gg extension like in 'https://discord.gg/cj5rg'
+linkedin_public_url:  # Example: For public profile 'www.linkedin.com/in/john-smith', 'john-smith' is your linkedin_public_url
+disqus_username: 
 profile_picture: https://68.media.tumblr.com/93f384858e9273d5b980b418e2f2f4d5/tumblr_o5i2aybLJG1uapsfmo2_250.png
 
 # Build settings
